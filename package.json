@@ -1,0 +1,40 @@
+{
+  "name": "waxom",
+  "version": "1.0.0",
+  "description": "finai project front-end basic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kompanietsaleksandra/final-project.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "gulp"
+  ],
+  "author": "Kompaniets Aleksandra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kompanietsaleksandra/final-project/issues"
+  },
+  "homepage": "https://github.com/kompanietsaleksandra/final-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-uglify": "^3.0.0",
+    "node-bourbon": "^4.2.8"
+  }
+}
