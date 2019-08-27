@@ -1,0 +1,32 @@
+.button {
+  background-color: $btnColor;
+  font-size: $fontSizeSection;
+  transition: 0.4s;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-family: $fontFamilyRalExtraBold;
+}
+.button:hover {
+  background-color: #fff;
+  color: #998675;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  justify-content: center;
+  button {
+    margin: 10px 10px 0px 0;
+    padding: 10px 25px;
+    font-size: $fontSizeSection;
+    background-color: $bgColorBasic;
+    border: 1px solid #8c8c8c;
+    border-radius: 4px;
+    color: #8c8c8c;
+  }
+}
+
+

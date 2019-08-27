@@ -1,0 +1,29 @@
+.footer {
+  color: $titleFontColor;
+}
+.footer-top {
+  background-color: #191919;
+  padding: 0 15px 0 15px;
+}
+.footer-bottom {
+  background-color: #111111;
+  padding: 0 15px 0 15px;
+}
+.footer-title {
+  font-family: $fontFamilyRalBold;
+  color: $bgColorBasic;
+  font-size: 24px;
+}
+.footer-item {
+  border-bottom: 2px solid #fff ;
+}
+.footer-img {
+  padding-bottom: 20px;
+}
+.footer-color {
+  color: #c7b299;
+}
+.footer-font {
+  color: $fontFooterColor;
+}
+

@@ -1,0 +1,84 @@
+.section {
+  padding: 30px 0 30px 0;
+}
+.section-title {
+  font-size: $fontSizeTitle;
+  font-family: $fontFamilyRalSemiBold;
+  color: $titleFontColor;
+}
+.section-description, .section-title {
+  text-align: center;
+}
+.section-description {
+  color: $fontColorBasic;
+  padding: 0 15px 0 15px;
+}
+.section-ideas {
+  background-color: #fbfaf8;
+  padding-top: 30px;
+}
+.section-purchase {
+  background-color: #392821;
+  color: $bgColorBasic;
+}
+.section-purchase-wrapper {
+  text-align: center;
+}
+.section-purchase-title {
+font-family: $fontFamilyRalReg;
+}
+.section-purchase-subtitle {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.section-statistic {
+  background-color: #402c23;
+}
+.section-video {
+  position: relative;
+}
+.section-video-content {
+  display: flex;
+  color: $bgColorBasic;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  svg {
+    width: 75px;
+    height: 75px;
+  }
+}
+.section-video-bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.section-title-video {
+  color: $bgColorBasic;
+  font-family: $fontFamilyRalMed;
+  font-size: 30px;
+}
+.section-devices-fig figure {
+  max-height: 300px;
+}
+.section-devices-img img {
+  object-fit: contain;
+  height: auto;
+}
+.section-images-img {
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  z-index: -1;
+  min-height: 630px;
+}
+.section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.7);
+  z-index: 0;
+}

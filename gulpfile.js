@@ -56,7 +56,8 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        './dev/js/libs/jquery/jquery-3.4.1.js'
+        './dev/js/libs/jquery/jquery-3.4.1.js',
+        './dev/js/libs/swiper/swiper.min.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

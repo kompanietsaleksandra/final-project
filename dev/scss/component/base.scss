@@ -1,4 +1,67 @@
 @import "variable";
 html {
-  font-family: RalewayExtraBold, serif;
+  font-family: $fontFamilyMontLight;
+  background: $bgColorBasic;
+  font-size: $fontSizeBasic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+p, ul, ol, figure {
+  margin: 0 0 10px 0;
+}
+
+* + p, * + ul, * + ol , * + figure {
+  margin-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.67em 0;
+}
+
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
+  margin-top: 0.67em;
+}
+
+a, .link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover, .link:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.logo {
+  display: inline-block;
+  font-family: $fontFamilyRalReg;
+  font-size: 34px;
+  color: #fff;
+}
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+svg {
+  width: 100%;
+  object-fit: contain;
 }
