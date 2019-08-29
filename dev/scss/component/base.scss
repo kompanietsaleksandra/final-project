@@ -47,10 +47,12 @@ a:hover, .link:hover {
 }
 
 .logo {
-  display: inline-block;
   font-family: $fontFamilyRalReg;
   font-size: 34px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
 }
 .swiper-container {
   width: 100%;
@@ -64,4 +66,16 @@ img {
 svg {
   width: 100%;
   object-fit: contain;
+}
+.icon {
+  fill: #fff;
+}
+.timer {
+  color: #b5a38e;
+  font-family: $fontFamilyMontRegular;
+}
+@media (min-width: 1200px ) {
+  .container {
+    width: 1200px;
+  }
 }

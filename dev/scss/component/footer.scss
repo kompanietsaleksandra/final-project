@@ -1,29 +1,47 @@
 .footer {
   color: $titleFontColor;
+  &-top {
+    background-color: #191919;
+    padding: 0 15px 0 15px;
+  }
+  &-bottom {
+    background-color: #111111;
+    padding: 0 15px 0 15px;
+  }
+  &-title {
+    font-family: $fontFamilyRalBold;
+    color: $bgColorBasic;
+    font-size: 24px;
+  }
+  &-item {
+    border-bottom: 2px solid #fff ;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  &-img {
+    padding-bottom: 20px;
+  }
+  &-color {
+    color: #c7b299;
+  }
+  &-font {
+    color: $fontFooterColor;
+  }
+  &-icon {
+    height: 58px;
+    width: 74px;
+  }
 }
-.footer-top {
-  background-color: #191919;
-  padding: 0 15px 0 15px;
+@media (min-width: 961px ){
+  .footer {
+    &-item {
+      border-bottom: none;
+    }
+    &-top {
+      padding: 80px 15px 68px 15px;
+    }
+    .logo {
+      margin-top: -15px;
+    }
+  }
 }
-.footer-bottom {
-  background-color: #111111;
-  padding: 0 15px 0 15px;
-}
-.footer-title {
-  font-family: $fontFamilyRalBold;
-  color: $bgColorBasic;
-  font-size: 24px;
-}
-.footer-item {
-  border-bottom: 2px solid #fff ;
-}
-.footer-img {
-  padding-bottom: 20px;
-}
-.footer-color {
-  color: #c7b299;
-}
-.footer-font {
-  color: $fontFooterColor;
-}
-

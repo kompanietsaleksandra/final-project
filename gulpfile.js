@@ -11,7 +11,9 @@ const
     cache        = require('gulp-cache'),
     imagemin     = require('gulp-imagemin'),
     svgSprite    = require('gulp-svg-sprites'),
-    svgmin       = require('gulp-svgmin');
+    svgmin       = require('gulp-svgmin'),
+    cheerio      = require('gulp-cheerio'),
+    replace      = require('gulp-replace');
 
 gulp.task('browser-sync', ['fonts', 'styles', 'scripts', 'common', 'html', 'svgSprite', 'images'], function() {
     browserSync.init({
@@ -29,6 +31,15 @@ gulp.task('svgSprite', function () {
                 pretty: true
             }
         }))
+        .pipe(cheerio({
+          run: function ($) {
+            $('[fill]').removeAttr('fill');
+            $('[stroke]').removeAttr('stroke');
+            $('[style]').removeAttr('style');
+          },
+          parserOptions: {xmlMode: false}
+        }))
+        .pipe(replace('&gt;', '>'))
         .pipe(svgSprite({
                 mode: "symbols",
                 preview: false,

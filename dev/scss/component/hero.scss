@@ -1,3 +1,25 @@
 .hero {
   color: $bgColorBasic;
 }
+
+@media (min-width: 1200px ) {
+  .hero {
+    &-title {
+      letter-spacing: 0.8px;
+      padding-left: 16px;
+      margin: 37px 0 0 0;
+    }
+    &-subtitle {
+      font-family: $fontFamilyRalExtraBold;
+      font-size: 52px;
+      margin-top: 8px;
+      letter-spacing: 0.4px;
+      margin-left: 13px;
+    }
+    .button {
+      position: relative;
+      top: 46px;
+      left: 8px;
+    }
+  }
+}
